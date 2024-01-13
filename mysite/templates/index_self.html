@@ -1,0 +1,16 @@
+<h2>hello world</h2><br>
+<a href="{% url 'about'%}">About Us</a>
+<a href="{% url 'service'%}">Service</a>
+<a href="{% url 'contact'%}">Contact US</a>
+<br>Name = {{name}}
+<form action="{% url 'add' %}" method = "POST">
+    {% csrf_token %}
+    <label for="fname">Principle :</label><br>
+    <input type="text" id="fname" name="principle" value=""><br>
+    <label for="fname">Rate:</label><br>
+    <input type="text" id="fname" name="rate" value=""><br>
+    <label for="lname">Number of Years:</label><br>
+    <input type="text" id="lname" name="numy" value=""><br><br>
+    <input type="submit" value="Submit">
+  </form>
+{% comment %} Jinja Patter {% endcomment %}

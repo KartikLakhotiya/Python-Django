@@ -1,0 +1,31 @@
+To create a django project : python -m django startproject mysite
+manage.py = File to manage the django project
+asgi and wsgi = used for deployment
+settings.py = to manage settings of the project. Setup of the project
+
+Runserver command = python manage.py runserver
+Default db = sqllite3
+
+django mvt
+
+Business Logic Layer (BLL) - To create different views of data
+
+Template = Presentation Layer & Phy Layer. Contains HTML files
+
+Whenever we create new app we have to add in INSTALLED_APPS section under settings.py
+
+open urls.py file under root folder (mysite)
+
+{{}} - django template language
+
+name in href must be sath with the name in url/courses in the path function
+
+Cross SOte request frogery(CSRF)
+
+ORM = Object Relational Mapping
+
+to create table we have to create class
+
+Commands to apply table in db
+python manage.py makemigration
+python manage.py migrate
